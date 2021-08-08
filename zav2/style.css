@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+[name="magForm"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: 30%;
+    padding: 1rem;
+
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+}
+fieldset{
+    display: flexbox;
+    border: none;
+}
+label {
+    margin: 0.8rem 0;
+    color: #5c666a;
+    font-weight: 600;
+}
+
+.container__row {
+    margin: 0.8rem 0;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+}
+
+[type="text"] {
+    background-color: #ededed;
+}
+
+[type="radio"] {
+    margin: 0 0.2rem;
+}
+
+[type="button"] {
+
+    width: 45%;
+    background-color: #dddddd;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    height: 30%;
+    padding: 5px;
+    background-color: #ededed;
+}
+.modal_window{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.6);
+}
+.modal__content{
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 1rem;
+    border: 1px solid #888;
+    width: 60%;
+}
+hr{
+    color: lightslategrey;
+    background-color: lightgrey;
+    margin: 1rem 0;
+}
+.modal_close{
+    
+    padding: 5px 10px;
+    border: none;
+    width: 10%;
+    margin-left: 90%;
+}
+.modal_exit{
+    cursor: pointer;
+    margin-left: 95%;
+}

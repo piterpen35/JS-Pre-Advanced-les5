@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson5 zav2</title>
+
+</head>
+
+<body>
+   <form name="magForm">
+
+        <div class="container">
+            <fieldset name="assortmentForm">
+                <label>Баланс</label><br>
+                <input disabled type="text" name="balance"><br>
+                <label>Пиво</label><br>
+                <input disabled type="text" name="beer"><br>
+                <label>Вино</label><br>
+                <input disabled type="text" name="wine"><br>
+                <label>Пепсі</label><br>
+                <input disabled type="text" name="pepsi"><br>
+            </fieldset>
+        </div>
+        <div class="container">
+            <label>Кількість</label>
+            <input type="number" name="productQuant">
+            <div class="container__row">
+                <input type="radio" name="productName" value="beer">Пиво
+                <input type="radio" name="productName" value="wine">Вино
+                <input type="radio" name="productName" value="pepsi">Пепсі
+            </div>
+            <input type="button" value="Додати" name="addProduct">
+            <textarea disabled name="bin"></textarea>
+            <input type="button" value="Купити" name="buyProduct">
+        </div>
+        <div class="container">
+
+        </div>
+
+    </form>
+    <div class="modal_window">
+        <div class="modal__content">
+            <span class="modal_exit">&#10006;</span>
+            <hr>
+            <div class="modal_text">
+            </div>
+            <hr>
+            <button class="modal_close" type="button">Close</button>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+    <script  src="mag.js" type="module"></script>
+</body>
+
+</html>
